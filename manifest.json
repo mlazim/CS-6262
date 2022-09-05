@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2000,
+  "name":"xss_detector",
+  "description":"Block_XSS",
+  "content_scripts": [
+    {
+      "matches": ["*:*"],
+      "all_frames": true,
+      "run_at": "document_start",
+      "js": ["frame_buster.js"]
+    }
+  ],
+  "version":"20.0",
+  "browser_action": {
+
+    "default_title": "stop bust",
+    "default_popup": "popup.html"
+
+   },
+
+  "permissions": [ "*****", "********","
+  ]
+
+}
